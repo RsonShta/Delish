@@ -26,10 +26,9 @@ body {
     width: 8rem;
     justify-items: center;
     align-items: center;
-
 }
 
-.signupP {
+.loginP {
     display: flex;
     justify-content: start;
     align-items: center;
@@ -39,18 +38,14 @@ body {
     transform: translateX(20%);
 }
 
-.Signup_section {
+.login_section {
     display: flex;
-    /* margin: 0 auto; */
     width: fit-content;
-    /* margin-top: 20px; */
     flex-direction: column;
     align-items: center;
     justify-content: center;
     transform: translateX(20%);
 }
-
-/* ********************************************************** */
 
 /* Username Section*/
 .Username {
@@ -79,26 +74,18 @@ body {
 
 .Username input:focus~label,
 .Username input:valid~label {
-    /* color: black; */
     left: 525px;
 }
 
-/* .Username input:invalid~label::before{
-    color: red;
-} */
-/* Username icon */
 .Username .profile ion-icon {
     margin-left: 30px;
     height: 90px;
     width: 28px;
     opacity: 40%;
     pointer-events: none;
-
 }
 
-/* Username input */
 .Username input {
-    /* padding: 20px; */
     position: absolute;
     left: 10%;
     border: none;
@@ -109,8 +96,6 @@ body {
     font-family: 'Lato', sans-serif;
     font-weight: 600;
 }
-
-/* ************************************************ */
 
 /* Email */
 .Email {
@@ -124,7 +109,6 @@ body {
     transform: translateX(20%);
 }
 
-/* Email Text */
 .Email label {
     position: absolute;
     left: 11%;
@@ -142,11 +126,6 @@ body {
 .Email input:valid~label {
     left: 575px;
 }
-
-/* .Email input:invalid~label{
-    left: 625px;
-    color: red;
-} */
 
 .Email .mail ion-icon {
     margin-top: 2px;
@@ -169,8 +148,7 @@ body {
     font-weight: 600;
 }
 
-/* ************************************** */
-
+/* Password */
 .Password {
     display: flex;
     align-items: center;
@@ -221,76 +199,11 @@ body {
     font-weight: 600;
 }
 
-/* ******************************************************** */
-
-.Confirm_Password {
-    display: flex;
-    align-items: center;
-    border-radius: 60px;
-    background-color: #D2E3C0;
-    margin-top: 20px;
-    width: 740px;
-    height: 62.95px;
-    transform: translateX(20%);
-}
-
-.Confirm_Password label {
-    position: absolute;
-    left: 10%;
-    font-family: 'Lato', sans-serif;
-    font-size: 18pt;
-    font-weight: 600;
-    opacity: 40%;
-    display: flex;
-    transform: translateX(10px);
-    pointer-events: none;
-    transition: 0.8s;
-}
-
-.Confirm_Password input:focus~label,
-.Confirm_Password input:valid~label {
-    left: 440px;
-}
-
-.Confirm_Password .double_lock1 ion-icon {
-    margin-top: 2px;
-    margin-left: 30px;
-    height: 90px;
-    width: 28px;
-    opacity: 40%;
-    pointer-events: none;
-}
-
-.Confirm_Password .double_lock2 ion-icon {
-    margin-top: 2px;
-    margin-left: -23px;
-    height: 90px;
-    width: 28px;
-    opacity: 40%;
-    pointer-events: none;
-}
-
-.Confirm_Password input {
-    position: absolute;
-    left: 10%;
-    border: none;
-    background-color: transparent;
-    outline: none;
-    width: 60%;
-    font-size: 18pt;
-    font-family: 'Lato', sans-serif;
-    font-weight: 600;
-}
-
-/* ************************************************************ */
-
-/*******************************/
 /* Eye Icon */
 .eyeToggle .eyeOpen {
     position: absolute;
     top: 20px;
     right: 40px;
-
 }
 
 .eyeToggle .eyeOpen {
@@ -310,16 +223,15 @@ body {
     width: 50px;
 }
 
-/*******************************/
-
-.signupbtn {
+/* Login Button */
+.loginbtn {
     display: inline-block;
     align-items: center;
     transform: translateX(22%);
     margin-top: 60px;
 }
 
-.signupbtn .signupRec {
+.loginbtn .loginRec {
     display: flex;
     justify-content: center;
     background-color: #f24949;
@@ -329,7 +241,7 @@ body {
     cursor: pointer;
 }
 
-.signupbtn .signupRec .signupNormal {
+.loginbtn .loginRec .loginNormal {
     border: none;
     background-color: transparent;
     color: #f2efe4;
@@ -338,34 +250,14 @@ body {
     cursor: pointer;
 }
 
-.signupbtn .Googlerec {
-    display: flex;
-    justify-content: center;
-    background-color: #f2efe4;
-    border: solid #f24949;
-    border-width: 2px;
-    border-radius: 60px;
-    height: 60px;
-    width: 600px;
-    cursor: pointer;
-}
-
-.signupbtn .Googlerec .withGoogle {
-    border: none;
-    background-color: transparent;
-    color: #f24949;
-    font-size: 18pt;
-    font-family: 'Jost', sans-serif;
-    cursor: pointer;
-}
-
-.GotoLogin {
+/* Go to Signup Section */
+.GotoSignup {
     display: flex;
     align-items: center;
     justify-content: center;
     transform: translateX(20%);
 }
-.GotoLogin a{
+
+.GotoSignup a {
     margin-left: 10px;
 }
-
