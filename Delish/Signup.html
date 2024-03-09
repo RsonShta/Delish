@@ -16,31 +16,41 @@
     <span class="signupP">
       <p>Sign Up to Delish account</p>
     </span>
+
+    <!-- *********************************************** -->
     <div class="Username">
       <span class="profile">
         <ion-icon name="person-sharp"></ion-icon>
       </span>
       <input name="username" id="S_username" type="text" maxlength="15" required />
-      <label for="username">Username</label><span class="errors" id="username-error"></span>
+      <label for="username">Username</label>
+      <span class="errors" id="username-error"></span>
     </div>
+
+    <!-- ******************************************************* -->
     <div class="Email">
       <span class="mail">
         <ion-icon name="mail"></ion-icon>
       </span>
       <input name="email" type="email" id="S_email" required />
-      <label for="email">Email</label><span class="errors" id="email-error"></span>
+      <label for="email">Email</label>
+      <span class="errors" id="email-error"></span>
     </div>
+
+    <!-- ******************************************************* -->
     <div class="Password">
       <span class="lock">
         <ion-icon name="lock-closed"></ion-icon>
       </span>
       <input name="password" type="password" id="S_pass" minlength="6" required />
-      <label for="Password">Password</label><span class="errors" id="password-error"></span>
+      <label for="Password">Password</label>
       <span class="eyeToggle" onclick="togglePasswordVisibility('S_pass')">
         <ion-icon name="eye-sharp" class="eyeOpen"></ion-icon>
         <ion-icon name="eye-off-sharp" class="eyeClose"></ion-icon>
       </span>
+      <span class="errors" id="password-error"></span>
     </div>
+    <!-- *********************************************************** -->
     <div class="Confirm_Password">
       <span class="double_lock1">
         <ion-icon name="lock-closed"></ion-icon>
@@ -49,12 +59,14 @@
         <ion-icon name="lock-closed"></ion-icon>
       </span>
       <input name="confirm-password" type="password" id="S_cpass" minlength="6" required />
-      <label for="Confirmpw">Confirm Password</label><span class="errors" id="confirm-password-error"></span>
+      <label for="Confirmpw">Confirm Password</label>
       <span class="eyeToggle" onclick="togglePasswordVisibility('S_cpass')">
         <ion-icon name="eye-sharp" class="eyeOpen"></ion-icon>
         <ion-icon name="eye-off-sharp" class="eyeClose"></ion-icon>
       </span>
+      <span class="errors" id="confirm-password-error"></span>  
     </div>
+    <!-- ***************************************************** -->
     <span class="signupbtn">
       <div class="signupRec">
         <button class="signupNormal">Sign Up</button>
@@ -64,6 +76,7 @@
         <button class="withGoogle">Sign in with Google</button>
       </div>
     </span>
+    <!-- ****************************************************** -->
     <span class="GotoLogin">
       <p>Already have an account?</p>
       <a href="Login.html">Login</a>

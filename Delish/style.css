@@ -248,7 +248,7 @@ body {
 }
 
 .Confirm_Password input:focus~label,
-.Confirm_Password input:valid~label {
+.Confirm_Password input:valid~label{
     left: 440px;
 }
 
@@ -363,9 +363,45 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    transform: translateX(20%);
+    transform: translateX(60%);
+    /* margin: 0 50%; */
 }
 .GotoLogin a{
     margin-left: 10px;
 }
 
+h5{
+    font-family: 'Jost', sans-serif;
+    margin: 2% 50%;
+    font-size: 12pt;
+    justify-content: center;
+}
+
+/* Error Messages */
+.errors {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+    display: none; /* Initially hide the error messages */
+}
+
+/* Labels */
+.Username label,
+.Email label,
+.Password label,
+.Confirm_Password label {
+    position: absolute;
+    left: 10%;
+    font-family: 'Lato', sans-serif;
+    font-size: 18pt;
+    font-weight: 600;
+    opacity: 40%;
+    transform: translateX(10%);
+    pointer-events: none;
+    transition: 0.8s;
+}
+
+/* Show the error message when the input is invalid */
+input:invalid + .errors {
+    display: block;
+}
